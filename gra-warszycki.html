@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NKMLRB8F');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W Ruinach Przeklętego Pałacu Czeka Skarb. Czy Starczy Ci Odwagi? - Jura Quest</title>
+    <meta name="description" content="Interaktywna gra terenowa na smartfona, która prowadzi śladem legendarnego kasztelana Stanisława Warszyckiego w ruinach pałacu we Włodowicach. Odkryj mroczne sekrety i legendarną fortunę.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Dodajemy klimatyczną czcionkę -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+
+    <style>
+        .game-header {
+            padding: 6rem 0;
+            background-color: var(--light-gray);
+        }
+        .gallery-img {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+        .details-icon {
+            font-size: 2rem;
+            color: var(--secondary-color);
+        }
+        .main-palace-image {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto; /* Wyśrodkowanie zdjęcia */
+        }
+        /* NOWE STYLE - "List od Ducha" */
+        #activationContainer, #teamNameEntryContainer {
+             background-color: #fff;
+        }
+
+        #questContainer.game-container {
+            background: url('https://www.transparenttextures.com/patterns/old-paper.png'), #fdfdf5;
+            border: 1px solid #ddd;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+            font-family: 'Marck Script', cursive; /* Używamy nowej czcionki */
+            font-size: 1.2rem;
+            color: #3d2c1c;
+        }
+        #questTitle {
+            font-family: 'Montserrat', sans-serif;
+            color: #5a3d2b;
+            border-bottom: 2px solid rgba(0,0,0,0.1);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        #questContainer .btn { font-family: 'Lato', sans-serif; } /* Przyciski mają standardową czcionkę */
+        #questContainer .btn-primary { background-color: #5a3d2b; border-color: #5a3d2b; }
+        #questContainer .form-control {
+            background-color: rgba(255, 255, 255, 0.5);
+            border: 1px solid #c9b7a1;
+            font-family: 'Lato', sans-serif; /* Pole odpowiedzi też standardowo */
+        }
+        .alert { font-family: 'Lato', sans-serif; } /* Alerty również standardowo */
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "W Ruinach Przeklętego Pałacu Czeka Skarb. Czy Starczy Ci Odwagi?",
+      "description": "Interaktywna gra terenowa na smartfona, która prowadzi śladem legendarnego kasztelana Stanisława Warszyckiego w ruinach pałacu we Włodowicach. Odkryj mroczne sekrety i legendarną fortunę.",
+      "image": "https://www.juraquest.pl/images/warszycki-palace.jpg",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.juraquest.pl/gra-warszycki.html",
+        "priceCurrency": "PLN",
+        "price": "4.99",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "25"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Jura Quest"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKMLRB8F"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Nawigacja -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">Jura Quest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Strona Główna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="nasze-gry.php">Nasze Gry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aktywacja.html">Aktywuj Grę</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mapa-atrakcji.php">Mapa Atrakcji</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cennik.php">Cennik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dla-partnerow.php">Dla Partnerów</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.php">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.php">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Nagłówek Gry -->
+        <header class="game-header">
+            <div class="container">
+            <div class="row gx-lg-5">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 fw-bold">W Ruinach Przeklętego Pałacu Czeka Skarb. Czy Starczy Ci Odwagi?</h1>
+                        <p class="lead text-muted">Interaktywna gra terenowa na smartfona, która prowadzi śladem legendarnego kasztelana Stanisława Warszyckiego w ruinach pałacu we Włodowicach. Odkryj mroczne sekrety i legendarną fortunę.</p>
+                    </div>
+                    <div class="col-lg-6 text-lg-end mt-4 mt-lg-0">
+                        <h3 class="mb-3" style="color: var(--secondary-color);">Gra Darmowa!</h3>
+                        <a href="aktywacja.html" class="btn btn-success btn-lg">Aktywuj i Graj!</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="container py-5">
+            <!-- Główne zdjęcie -->
+            <div id="main-image" class="mb-5 text-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/JuDrone_Palac_Wlodowice.jpg" alt="Pałac we Włodowicach" class="img-fluid gallery-img main-palace-image">
+            </div>
+
+            <!-- Nowa sekcja fabuły -->
+            <div id="story" class="mb-5">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="mb-3 text-center">W ruinach przeklętego pałacu czeka skarb. Czy starczy Ci odwagi, by go odnaleźć?</h2>
+                        <p>Włodowice, rok 1655. Stanisław Warszycki, kasztelan krakowski, magnat o żelaznej woli i mrocznej reputacji, powraca do swojego pałacu. Plotki głoszą, że w jego lochach, gdzie słońce nigdy nie dociera, urządził izbę tortur, a jego chciwość nie znała granic. Mówi się, że nawet po śmierci jego dusza nie zaznała spokoju, a pod postacią widmowego czarnego psa strzeże ukrytego w murach pałacu legendarnego skarbu.</p>
+                        <p>Teraz, wieki później, to Ty stajesz u bram jego dawnej rezydencji. Powietrze jest ciężkie od niewypowiedzianych historii, a każdy szmer w ruinach zdaje się szeptać imię Warszyckiego. Czy jesteś gotów zmierzyć się z klątwą, która spoczywa na tym miejscu? Czy Twoja odwaga wystarczy, by przechytrzyć ducha i odnaleźć to, czego strzeże od wieków?</p>
+                        <p class="fw-bold text-center mt-4">Zbierz drużynę, podążaj śladem zapomnianych wskazówek i rozwikłaj zagadki, które doprowadzą Cię do fortuny. Pamiętaj, czas ucieka, a z każdym krokiem będziesz czuł na plecach lodowaty oddech upiora. Czy zdobędziesz fortunę, czy staniesz się kolejną ofiarą klątwy Warszyckiego?</p>
+                        <p class="fw-bold text-center mt-4">Podejmij wyzwanie. Skarb czeka!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sekcja "Masz już kod?" -->
+            <section id="have-code" class="container text-center py-5">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="display-5">Masz już kod?</h2>
+                        <p class="lead">Wpisz go poniżej, aby rozpocząć swoją przygodę!</p>
+                        <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#codeEntryModal">
+                            Wpisz kod i zacznij grę!
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRZYWRÓCONE SEKCJE: Przebieg Gry i Szczegóły Techniczne -->
+            <div class="row gx-lg-5">
+                <div class="col-lg-7">
+                    <!-- Przebieg Gry -->
+                    <div id="game-flow" class="mt-5">
+                        <h2 class="mb-4">Przebieg Gry</h2>
+                        <div class="accordion" id="accordionFlow">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <strong>Start:</strong> Rynek we Włodowicach
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFlow">
+                                    <div class="accordion-body">
+                                        <strong>Zadanie 1:</strong> Witajcie w Włodowicach! Wasza przygoda zaczyna się na rynku. Odnajdźcie herb miasta. Jaki rok jest pierwszą pisaną wzmianką o Włodowicach?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <strong>Punkt 2:</strong> Kościół św. Bartłomieja Apostoła
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFlow">
+                                        <div class="accordion-body">
+                                            <strong>Zadanie:</strong> Po lewej i prawej stronie od wejścia do kościoła znajdują się kamienne posągi. Wpisz poprawnie ich nazwy.
+                                            <div class="mt-3">
+                                                <div class="mb-2">
+                                                    <label for="statueLeft" class="form-label">Napis na posągu po lewej stronie:</label>
+                                                    <input type="text" class="form-control" id="statueLeft" placeholder="Wpisz odpowiedź">
+                                                </div>
+                                                <div>
+                                                    <label for="statueRight" class="form-label">Napis na posągu po prawej stronie:</label>
+                                                    <input type="text" class="form-control" id="statueRight" placeholder="Wpisz odpowiedź">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <strong>Punkt 3:</strong> Ruiny Pałacu Warszyckiego
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFlow">
+                                    <div class="accordion-body">
+                                        <strong>Zadanie (Misja Kreatywna):</strong> Aplikacja odtwarza krótkie nagranie audio o historii pałacu. "Wyobraź sobie, że jesteś królem Sobieskim. Nagraj krótkie wideo, w którym pozdrawiasz kasztelana Warszyckiego stojąc przed ruinami jego posiadłości".
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <strong>Punkt 4:</strong> Stary park pałacowy
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFlow">
+                                    <div class="accordion-body">
+                                        <strong>Zadanie (Znajdź kod QR):</strong> "Według legendy, klucz do skarbca ukryto w miejscu, gdzie stary dąb spogląda na pałac. Znajdź w parku najstarsze drzewo i poszukaj na nim ukrytego kodu QR".
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <strong>Finał:</strong> Ukryta lokalizacja w pobliżu parku
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFlow">
+                                    <div class="accordion-body">
+                                        <strong>Zadanie (Znajdź punkt GPS):</strong> Zeskanowanie kodu QR ujawnia współrzędne GPS finałowej lokalizacji. Po dotarciu na miejsce, aplikacja ogłasza: "Gratulacje! Odnaleźliście miejsce ukrycia legendarnego skarbu Warszyckiego!".
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <!-- Szczegóły Techniczne -->
+                    <div id="details">
+                        <h2 class="mb-4">Szczegóły Techniczne</h2>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="bi bi-clock-history details-icon me-3"></i>
+                                <div>
+                                    <strong>Czas trwania:</strong> 2-3 godziny
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="bi bi-geo-alt-fill details-icon me-3"></i>
+                                <div>
+                                    <strong>Długość trasy:</strong> ok. 3.5 km
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="bi bi-bar-chart-line-fill details-icon me-3"></i>
+                                <div>
+                                    <strong>Poziom trudności:</strong> Średni
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="bi bi-people-fill details-icon me-3"></i>
+                                <div>
+                                    <strong>Dla kogo:</strong> Rodziny z dziećmi 8+, grupy przyjaciół
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-pin-map-fill details-icon me-3"></i>
+                                <div>
+                                    <strong>Punkt startowy:</strong> Parking przy ruinach pałacu we Włodowicach
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <div class="mb-3">
+                <p class="mb-1">POŚREDNICTWO FINANSOWE EWELINA CECUGOWICZ-MINGE</p>
+                <p class="mb-1">ul. Myszkowska 23, 42-421 Włodowice</p>
+                <p class="mb-1">NIP: 6492229986</p>
+            </div>
+            <p>&copy; 2025 Jura Quest. Wszelkie prawa zastrzeżone.</p>
+            <p>
+                <a href="polityka-prywatnosci.html" class="text-white">Polityka Prywatności</a> | 
+                <a href="regulamin.html" class="text-white">Regulamin</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+    <!-- NOWY MODAL - Wpisz kod -->
+    <div class="modal fade" id="codeEntryModal" tabindex="-1" aria-labelledby="codeEntryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="codeEntryModalLabel">Rozpocznij grę</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="codeEntryForm">
+                    <div class="modal-body">
+                        <div id="codeEntryMessage" class="mb-3"></div>
+                        <p>Wpisz swój kod dostępu oraz adres e-mail, na który został wysłany.</p>
+                        <div class="mb-3">
+                            <label for="codeInput" class="form-label">Kod Dostępu</label>
+                            <input type="text" class="form-control" id="codeInput" name="accessCode" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailForCodeInput" class="form-label">Adres E-mail</label>
+                            <input type="email" class="form-control" id="emailForCodeInput" name="email" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+                        <button type="submit" class="btn btn-primary">Rozpocznij</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Zakupu -->
+    <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="purchaseModalLabel">Kup grę: Tajemnica Skarbu Warszyckiego</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="purchaseForm">
+                    <div class="modal-body">
+                        <div id="purchaseMessage" class="mb-3"></div>
+                        <p>Podaj swój adres e-mail, na który wyślemy kod dostępu do gry.</p>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Adres E-mail</label>
+                            <input type="email" class="form-control" id="emailInput" name="email" required>
+                        </div>
+                        <input type="hidden" name="gameId" value="warszycki-skarb">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+                        <button type="submit" class="btn btn-primary">Potwierdź zakup</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Skrypt obsługujący formularz zakupu
+        document.getElementById('purchaseForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const formData = new FormData(form);
+            const purchaseMessage = document.getElementById('purchaseMessage');
+            const submitButton = form.querySelector('button[type="submit"]');
+
+            purchaseMessage.innerHTML = '<div class="alert alert-info">Przetwarzanie...</div>';
+            submitButton.disabled = true;
+
+            fetch('https://juraquest.pl/api/order.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Błąd serwera: ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.status === 'success' && data.redirectUrl) {
+                    purchaseMessage.innerHTML = '<div class="alert alert-success">Przekierowywanie do płatności...</div>';
+                    window.location.href = data.redirectUrl;
+                } else {
+                    purchaseMessage.innerHTML = '<div class="alert alert-danger">' + (data.message || 'Wystąpił nieoczekiwany błąd.') + '</div>';
+                    submitButton.disabled = false;
+                }
+            })
+            .catch(error => {
+                console.error('Błąd:', error);
+                purchaseMessage.innerHTML = '<div class="alert alert-danger">Wystąpił krytyczny błąd połączenia. Spróbuj ponownie.</div>';
+                submitButton.disabled = false;
+            });
+        });
+
+        // Skrypt obsługujący formularz wpisywania kodu
+        document.getElementById('codeEntryForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const form = event.target;
+            const messageDiv = document.getElementById('codeEntryMessage');
+            messageDiv.innerHTML = '<div class="alert alert-info">Weryfikowanie kodu...</div>';
+            
+            setTimeout(() => {
+                messageDiv.innerHTML = '<div class="alert alert-success">Kod poprawny! Rozpoczynanie gry...</div>';
+                window.location.href = 'aktywacja.html?code=' + form.querySelector('#codeInput').value;
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

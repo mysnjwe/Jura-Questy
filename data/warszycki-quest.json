@@ -1,0 +1,98 @@
+
+{
+    "WARSZYCKI_START": {
+        "type": "quest_only",
+        "title": "Zegar Czasu i Kamień Pamięci",
+        "description": "Stoisz na rynku Włodowic, gdzie czas płynie inaczej. Powietrze drży od stuleci. Tuż obok zegara, który odmierza nie tylko godziny, ale i losy miasta, ukryty jest herb – tarcza z przeszłością wypisaną w symbolach. Spójrz uważnie. Wśród znaków i dat znajdziesz pierwszą pisaną wzmiankę o Włodowicach. Zapisz sumę cyfr tego roku – to klucz do pierwszego progu.",
+        "answer": "5",
+        "hint": "Herb znajdziesz niedaleko zegara. Szukaj daty – ale nie całej, tylko jej duszy, czyli sumy cyfr.",
+        "answerType": "single_input",
+        "nextQuestId": "WARSZYCKI_ZADANIE_2"
+    },
+    "WARSZYCKI_ZADANIE_2": {
+        "type": "quest_only",
+        "title": "Kamienne Anioły",
+        "description": "Przed drzwiami „Domu Pana” czuwają dwa kamienne widma – milczące, lecz pamiętające. Ich oczy patrzą w dal, ale ich imiona wciąż szeptane są przez wiatr. Spójrz u stóp każdej z postaci. Tam, w cieniu rzeźby, wyryto imiona tych, którzy nigdy nie zasnęli. Wpisz je – w dowolnej kolejności – by otworzyć kolejne drzwi czasu.",
+        "answerType": "dual_input",
+        "answers": [["S ROZALIJA", "ROZALIJA", "S. ROZALIJA", "S.ROZALIJA"], ["S ROCH", "ROCH", "S. ROCH", "S.ROCH"]],
+        "hint": "Nie szukaj twarzy – szukaj stóp. Tam, gdzie kamień spotyka ziemię, kryją się imiona.",
+        "nextQuestId": "WARSZYCKI_ZADANIE_3_Q1"
+    },
+    "WARSZYCKI_ZADANIE_3_Q1": {
+        "type": "quest_only",
+        "title": "Kamień Węgielny i Echo Historii",
+        "description": "Kościół stoi jak strażnik milczenia. Jego mury pamiętają więcej niż kroniki. Na jednej z tablic – tej, która opowiada o początkach – znajdziesz datę. To wtedy biskup Kazimierz Łubieński położył kamień węgielny, jakby zaklął fundamenty w czasie. Zapisz ostatnią cyfrę tego roku – to znak, że rozumiesz język przeszłości.",
+        "answer": "1",
+        "hint": "Nie szukaj całej daty – wystarczy jej koniec. Ostatnia cyfra to klucz.",
+        "answerType": "single_input",
+        "nextQuestId": "WARSZYCKI_ZADANIE_3_Q2"
+    },
+    "WARSZYCKI_ZADANIE_3_Q2": {
+        "type": "quest_only",
+        "title": "Cztery Wieże Ciszy",
+        "description": "Po rozbudowie w 1796 roku kościół nie był już tym samym. Wzbił się ku niebu z dumą – i z czterema wieżami, jakby chciał dotknąć cztery strony świata. Ile ich było? Odpowiedź znajdziesz na tablicy – tam, gdzie historia mówi głosem pękniętego kamienia.",
+        "answers": ["cztery", "4"],
+        "hint": "Liczba ta jest tak prosta, że aż się chowa. Szukaj słowa, nie symbolu.",
+        "answerType": "single_input",
+        "nextQuestId": "WARSZYCKI_ZADANIE_3_Q3"
+    },
+    "WARSZYCKI_ZADANIE_3_Q3": {
+        "type": "quest_only",
+        "title": "Król, Który Zasiał Wiarę",
+        "description": "Dawno temu, gdy lasy były gęstsze, a drogi krętsze, pewien król postanowił zostawić tu ślad – nie w złocie, lecz w wierze. To on ufundował pierwszą parafię we Włodowicach. Jego imię wciąż brzmi dumnie w kronikach. Wpisz je – by oddać hołd temu, kto widział przyszłość w kamieniu i modlitwie.",
+        "answer": "Kazimierz Wielki",
+        "hint": "Szukaj na tablicy. To imię, które nie zginęło – bo historia je wypisała złotymi zgłoskami.",
+        "answerType": "single_input",
+        "nextQuestId": "WARSZYCKI_FINAL"
+    },
+    "WARSZYCKI_FINAL": {
+        "type": "info_only",
+        "title": "Pierwszy Krok Za Tobą",
+        "description": "Udało się. Przeszedłeś przez pierwszy krąg czasu. Ale to dopiero początek. Historia nie kończy się na kościele. Czeka na ciebie coś większego – coś, co kiedyś było pałacem, a dziś jest ruiną. Ale w ruinach często drzemie największa moc.",
+        "nextQuestId": "PRZEJSCIE_DO_PALACU"
+    },
+    "PRZEJSCIE_DO_PALACU": {
+        "type": "info_only",
+        "title": "Ku Ruinom, Ku Pamięci",
+        "description": "Twoje kroki prowadzą teraz wśród drzew i cieni – ku miejscu, gdzie kiedyś śmiano się w salach balowych, a dziś szeleści tylko wiatr. Ruiny pałacu czekają. I nie są puste.",
+        "nextQuestId": "ATENY_OLKUSKIE_ZADANIE_1_Q1"
+    },
+    "ATENY_OLKUSKIE_ZADANIE_1_Q1": {
+        "type": "quest_only",
+        "title": "Kasztelan i Trzecia Litera",
+        "description": "Wśród zwalonych murów pałacu wciąż stoi cień kasztelana – tego, który po potopie szwedkim podniósł to miejsce z popiołów. Jego nazwisko jest wyryte w kamieniu, ale tylko trzecia litera jest kluczem. Zapisz ją – to znak rozpoznania.",
+        "answer": "r",
+        "hint": "Nazwisko znajdziesz na tablicy. Nie szukaj całości – tylko trzecią literę.",
+        "answerType": "single_input",
+        "nextQuestId": "ATENY_OLKUSKIE_ZADANIE_1_Q2"
+    },
+    "ATENY_OLKUSKIE_ZADANIE_1_Q2": {
+        "type": "quest_only",
+        "title": "Rok, Gdy Narodziły Się Ateny",
+        "description": "Michał Poleski – marzyciel, wizjoner, człowiek, który widział w tym miejscu coś więcej niż ruiny. Nazwał je Atenami Olkuskimi. Rok, w którym to zrobił, jest zapisany na tablicy. Zapisz sumę cyfr tego roku – to data, która drży od znaczenia.",
+        "answer": "16",
+        "hint": "Szukaj daty związanej z Poleskim. Nie całej – tylko jej duszy.",
+        "answerType": "single_input",
+        "nextQuestId": "ATENY_OLKUSKIE_ZADANIE_1_Q3"
+    },
+    "ATENY_OLKUSKIE_ZADANIE_1_Q3": {
+        "type": "quest_only",
+        "title": "Biblioteka, Która liczyła więcej niż świat",
+        "description": "W murach pałacu kiedyś mieszkała wiedza – tysiące tomów, setki myśli, jedna biblioteka. Ile cyfr ma liczba, która określa jej wielkość? To pytanie nie o liczbę, lecz o kształt pamięci.",
+        "answer": "5",
+        "hint": "Liczba tomów jest na tablicy. Nie musisz jej znać – wystarczy, że zliczysz jej cienie.",
+        "answerType": "single_input",
+        "nextQuestId": "ATENY_OLKUSKIE_NAGRODA"
+    },
+    "ATENY_OLKUSKIE_NAGRODA": {
+        "type": "info_only",
+        "title": "Fragment Mapy Snów",
+        "description": "Otrzymujesz kawałek mapy – nie z papieru, lecz z pamięci. Tam, gdzie król kiedyś schodził z konia, dziś schyl głowę po wiedzę. Podążaj ku miejscu, gdzie nauka miała swoje laboratorium. Kształt na mapie to nie linia – to szept przeszłości.",
+        "nextQuestId": "GAME_FINAL_MESSAGE"
+    },
+    "GAME_FINAL_MESSAGE": {
+        "type": "info_only",
+        "title": "Koniec? Nie. To dopiero początek.",
+        "description": "Gratulacje, Wędrowcze. Przeszedłeś przez cienie historii, dotknąłeś kamieni, które pamiętają więcej niż my. Nie tylko zdobyłeś wiedzę – zostałeś jej częścią. Dziękujemy, że poszedłeś tą drogą z nami.\nAle pamiętaj: każdy koniec to tylko drzwi do kolejnego początku."
+    }
+}

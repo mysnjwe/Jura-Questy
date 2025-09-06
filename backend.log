@@ -1,0 +1,422 @@
+> backend.log
+cat backend.log
+cat backend.log
+
+> router.log
+cat router.log
+cat /Users/mateuszminge/Desktop/Jura\ Questy/backend.log
+ONY (wersja ostateczna) ---
+[2025-07-12 08:50:32] Odebrano kod: '1'
+Odebrano powiadomienie P24: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_6878f1adeebcb5.86197826","amount":499,"originAmount":499,"currency":"PLN","orderId":4300031817,"methodId":154,"statement":"p24-T8A-A1A-B7N","sign":"9601e6c5dc930caee4af5c26a1568e8891779ff01c556dbc7e327b56baa187a4c849aa2185c60266317c8773b95b7d31"}
+p24_notification.php: Sign data for hash: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_6878f1adeebcb5.86197826","amount":499,"originAmount":499,"currency":"PLN","orderId":4300031817,"methodId":154,"statement":"p24-T8A-A1A-B7N","crc":"5d0f8ff414160baa"}p24_notification.php: Expected Sign: 199487abf55aa13bd25d6193738ba6545bbc25d8e37587781b6db42164a3806bc3b19b54234c3e976beba591f40a26d1 | Received Sign: 9601e6c5dc930caee4af5c26a1568e8891779ff01c556dbc7e327b56baa187a4c849aa2185c60266317c8773b95b7d31Błąd weryfikacji sygnatury.
+[2025-07-17 17:23:52] order.php: Skrypt uruchomiony.
+[2025-07-17 17:23:52] order.php: Metoda POST poprawna.
+[2025-07-17 17:23:52] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-07-17 17:23:52] order.php: Sesja juraquest_6879158844a751.52554365 przygotowana.
+[2025-07-17 17:23:52] order.php: Sygnatura dla sesji juraquest_6879158844a751.52554365 wygenerowana.
+[2025-07-17 17:23:52] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_6879158844a751.52554365","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_6879158844a751.52554365","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"b3c42f47f12637ecb579e83cb9f51f2cf16960d4ec5f91f1b0fc40122292061105e1fe32603841d5836aa95011a2e179"}
+[2025-07-17 17:23:52] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-17 17:23:52] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:23:52] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:24:30] order.php: Skrypt uruchomiony.
+[2025-07-17 17:24:30] order.php: Metoda POST poprawna.
+[2025-07-17 17:24:30] order.php: E-mail poprawny: test@example.com
+[2025-07-17 17:24:30] order.php: Sesja juraquest_687915ae526247.89668864 przygotowana.
+[2025-07-17 17:24:30] order.php: Sygnatura dla sesji juraquest_687915ae526247.89668864 wygenerowana.
+[2025-07-17 17:24:30] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_687915ae526247.89668864","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: test-game","email":"test@example.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_687915ae526247.89668864","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"f4f1f6a092bd0b31510cbd64a3c03279fa5d1a7fa9f9b1031f236383980dc899a6ef3051fb0c2ebb9971bca163a06c99"}
+[2025-07-17 17:24:30] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-17 17:24:30] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:24:30] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:25:57] order.php: Skrypt uruchomiony.
+[2025-07-17 17:25:57] order.php: Metoda POST poprawna.
+[2025-07-17 17:25:57] order.php: E-mail poprawny: test@example.com
+[2025-07-17 17:25:57] order.php: Sesja juraquest_687916058c1287.49663358 przygotowana.
+[2025-07-17 17:25:57] order.php: Sygnatura dla sesji juraquest_687916058c1287.49663358 wygenerowana.
+[2025-07-17 17:25:57] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_687916058c1287.49663358","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: test-game","email":"test@example.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_687916058c1287.49663358","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"2ba83069d4ca112e1e024fdd3e42e51fb71b7297653cc37789409bec11e1250b78c6ce590f7412445ebae3e72e8f6727"}
+[2025-07-17 17:25:57] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-17 17:25:57] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:25:57] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:26:52] order.php: Skrypt uruchomiony.
+[2025-07-17 17:26:52] order.php: Metoda POST poprawna.
+[2025-07-17 17:26:52] order.php: E-mail poprawny: test@example.com
+[2025-07-17 17:26:52] order.php: Sesja juraquest_6879163c89eb14.09666996 przygotowana.
+[2025-07-17 17:26:52] order.php: Sygnatura dla sesji juraquest_6879163c89eb14.09666996 wygenerowana.
+[2025-07-17 17:26:52] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_6879163c89eb14.09666996","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: test-game","email":"test@example.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_6879163c89eb14.09666996","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"e4a4dab4f0ead13624532b05261a5557d32cb2f3d2ecf257941048d54b8a39b0e03741b6d508a398a8856055904a6225"}
+[2025-07-17 17:26:52] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-17 17:26:52] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:26:52] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:29:18] order.php: Skrypt uruchomiony.
+[2025-07-17 17:29:18] order.php: Metoda POST poprawna.
+[2025-07-17 17:29:18] order.php: E-mail poprawny: test@example.com
+[2025-07-17 17:29:18] order.php: Sesja juraquest_687916cea57364.18286188 przygotowana.
+[2025-07-17 17:29:18] order.php: Sygnatura dla sesji juraquest_687916cea57364.18286188 wygenerowana.
+[2025-07-17 17:29:18] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_687916cea57364.18286188","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: test-game","email":"test@example.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_687916cea57364.18286188","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"51a8b8051d3fead80b9a3bf8640d6727805e329923c9197cf38cc982829f1e4d1b0b9fbcf845bd1c142626380aa05b57"}
+[2025-07-17 17:29:18] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-17 17:29:18] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:29:18] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:40:38] order.php: Skrypt uruchomiony.
+[2025-07-17 17:40:38] order.php: Metoda POST poprawna.
+[2025-07-17 17:40:38] order.php: E-mail poprawny: test@example.com
+[2025-07-17 17:40:38] order.php: Sesja juraquest_687919761d9674.75682763 przygotowana.
+[2025-07-17 17:40:38] order.php: Sygnatura dla sesji juraquest_687919761d9674.75682763 wygenerowana.
+[2025-07-17 17:40:38] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_687919761d9674.75682763","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: test-game","email":"test@example.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_687919761d9674.75682763","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"bb27cbbc0a79459ab1229bf490ac301aca638d84d45334b02874ebc62b17d3d23b2b19040ee6140f6e0cfeac87e4d96d"}
+[2025-07-17 17:40:38] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-17 17:40:38] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:40:38] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:42:40] order.php: Skrypt uruchomiony.
+[2025-07-17 17:42:40] order.php: Metoda POST poprawna.
+[2025-07-17 17:42:40] order.php: E-mail poprawny: test@example.com
+[2025-07-17 17:42:40] order.php: Sesja juraquest_687919f0939e05.89572069 przygotowana.
+[2025-07-17 17:42:40] order.php: Sygnatura dla sesji juraquest_687919f0939e05.89572069 wygenerowana.
+[2025-07-17 17:42:40] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_687919f0939e05.89572069","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: test-game","email":"test@example.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_687919f0939e05.89572069","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"0895effb5cb85a78379113a7832715e88f29e0e24d50018b39b87487e63468dffd8b5823b60dc7557293270c82ac3880"}
+[2025-07-17 17:42:40] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-17 17:42:40] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:42:40] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:44:19] order.php: Skrypt uruchomiony.
+[2025-07-17 17:44:19] order.php: Metoda POST poprawna.
+[2025-07-17 17:44:19] order.php: E-mail poprawny: test@example.com
+[2025-07-17 17:44:19] order.php: Sesja juraquest_68791a53b77fc0.18479305 przygotowana.
+[2025-07-17 17:44:19] order.php: Sygnatura dla sesji juraquest_68791a53b77fc0.18479305 wygenerowana.
+[2025-07-17 17:44:19] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68791a53b77fc0.18479305","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: test-game","email":"test@example.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_68791a53b77fc0.18479305","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"bfc2c34a5414c4711f06fb72f163cb9bed11abda654051c58725343af1ead2e8a2835b36accdf3fee853088f81b7a0e4"}
+[2025-07-17 17:44:19] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-17 17:44:19] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:44:19] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:46:08] order.php: Skrypt uruchomiony.
+[2025-07-17 17:46:08] order.php: Metoda POST poprawna.
+[2025-07-17 17:46:08] order.php: E-mail poprawny: test@example.com
+[2025-07-17 17:46:08] order.php: Sesja juraquest_68791ac0580700.43441296 przygotowana.
+[2025-07-17 17:46:08] order.php: Sygnatura dla sesji juraquest_68791ac0580700.43441296 wygenerowana.
+[2025-07-17 17:46:08] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68791ac0580700.43441296","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: test-game","email":"test@example.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_68791ac0580700.43441296","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"e314d67cec59f99e8afdf44b6fe652987ea982f3fe6e2238713da1ce133c6de87fce6672249ba84c39baab7d4ee2773b"}
+[2025-07-17 17:46:08] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-17 17:46:08] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:46:08] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:47:48] order.php: Skrypt uruchomiony.
+[2025-07-17 17:47:48] order.php: Metoda POST poprawna.
+[2025-07-17 17:47:48] order.php: E-mail poprawny: test@example.com
+[2025-07-17 17:47:48] order.php: Sesja juraquest_68791b24691534.91556173 przygotowana.
+[2025-07-17 17:47:48] order.php: Sygnatura dla sesji juraquest_68791b24691534.91556173 wygenerowana.
+[2025-07-17 17:47:48] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68791b24691534.91556173","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: test-game","email":"test@example.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_68791b24691534.91556173","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"fd93ec36d7fe551beeaef5573d4f3e1c6a4d0e852fe5f88efc829fb6318483ae8f21456330d6e2688f374ef78350b020"}
+[2025-07-17 17:47:48] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-17 17:47:48] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 17:47:48] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+Odebrano powiadomienie P24: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_6878f1adeebcb5.86197826","amount":499,"originAmount":499,"currency":"PLN","orderId":4300031817,"methodId":154,"statement":"p24-T8A-A1A-B7N","sign":"9601e6c5dc930caee4af5c26a1568e8891779ff01c556dbc7e327b56baa187a4c849aa2185c60266317c8773b95b7d31"}
+p24_notification.php: Sign data for hash: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_6878f1adeebcb5.86197826","amount":499,"originAmount":499,"currency":"PLN","orderId":4300031817,"methodId":154,"statement":"p24-T8A-A1A-B7N","crc":"5d0f8ff414160baa"}p24_notification.php: Expected Sign: 199487abf55aa13bd25d6193738ba6545bbc25d8e37587781b6db42164a3806bc3b19b54234c3e976beba591f40a26d1 | Received Sign: 9601e6c5dc930caee4af5c26a1568e8891779ff01c556dbc7e327b56baa187a4c849aa2185c60266317c8773b95b7d31Błąd weryfikacji sygnatury.
+Odebrano powiadomienie P24: 
+Błąd dekodowania JSON.
+Odebrano powiadomienie P24: 
+Błąd dekodowania JSON.
+Odebrano powiadomienie P24: 
+Błąd dekodowania JSON.
+[2025-07-17 20:34:24] order.php: Skrypt uruchomiony.
+[2025-07-17 20:34:24] order.php: Metoda POST poprawna.
+[2025-07-17 20:34:24] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-07-17 20:34:24] order.php: Sesja juraquest_6879423094d259.81963919 przygotowana.
+[2025-07-17 20:34:24] order.php: Sygnatura dla sesji juraquest_6879423094d259.81963919 wygenerowana.
+[2025-07-17 20:34:24] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_6879423094d259.81963919","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_6879423094d259.81963919","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"c912e56699886d76fd7cafc08e1344e588df663db8f782eb30628787a763a68618059eedb3aaf665c2a2cd1b3f95533b"}
+[2025-07-17 20:34:24] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-17 20:34:24] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 20:34:24] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 20:35:16] order.php: Skrypt uruchomiony.
+[2025-07-17 20:35:16] order.php: Metoda POST poprawna.
+[2025-07-17 20:35:16] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-07-17 20:35:16] order.php: Sesja juraquest_68794264845fd8.86529675 przygotowana.
+[2025-07-17 20:35:16] order.php: Sygnatura dla sesji juraquest_68794264845fd8.86529675 wygenerowana.
+[2025-07-17 20:35:16] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68794264845fd8.86529675","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_68794264845fd8.86529675","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"ca0722213b72a20af890be01379ceeb8c77b17c63d150fcaa7ba9610c89fcf51fc030df3903b74619e45a391506207c3"}
+[2025-07-17 20:35:16] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-17 20:35:16] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 20:35:16] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 20:35:30] order.php: Skrypt uruchomiony.
+[2025-07-17 20:35:30] order.php: Metoda POST poprawna.
+[2025-07-17 20:35:30] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-07-17 20:35:30] order.php: Sesja juraquest_687942725b6af0.67144336 przygotowana.
+[2025-07-17 20:35:30] order.php: Sygnatura dla sesji juraquest_687942725b6af0.67144336 wygenerowana.
+[2025-07-17 20:35:30] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_687942725b6af0.67144336","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_687942725b6af0.67144336","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"1f4fb80e6868eb7a24d226572d3cbbbfd8901c536b1c36a496c3e97051106b673d9274579f7821f360c37864118737fa"}
+[2025-07-17 20:35:30] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-17 20:35:30] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 20:35:30] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 20:38:12] order.php: Skrypt uruchomiony.
+[2025-07-17 20:38:12] order.php: Metoda POST poprawna.
+[2025-07-17 20:38:12] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-07-17 20:38:12] order.php: Sesja juraquest_68794314ee96b0.02726877 przygotowana.
+[2025-07-17 20:38:12] order.php: Sygnatura dla sesji juraquest_68794314ee96b0.02726877 wygenerowana.
+[2025-07-17 20:38:12] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68794314ee96b0.02726877","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_68794314ee96b0.02726877","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"cffffd3a0f36f7faa0f218c5a716a01c2156dba496bf496589534d112ed113ad8ffdbf3145529d96b1e10ae4aef87e13"}
+[2025-07-17 20:38:12] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-17 20:38:13] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-17 20:38:13] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+Odebrano powiadomienie P24: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_6878f1adeebcb5.86197826","amount":499,"originAmount":499,"currency":"PLN","orderId":4300031817,"methodId":154,"statement":"p24-T8A-A1A-B7N","sign":"9601e6c5dc930caee4af5c26a1568e8891779ff01c556dbc7e327b56baa187a4c849aa2185c60266317c8773b95b7d31"}
+p24_notification.php: Sign data for hash: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_6878f1adeebcb5.86197826","amount":499,"originAmount":499,"currency":"PLN","orderId":4300031817,"methodId":154,"statement":"p24-T8A-A1A-B7N","crc":"5d0f8ff414160baa"}p24_notification.php: Expected Sign: 199487abf55aa13bd25d6193738ba6545bbc25d8e37587781b6db42164a3806bc3b19b54234c3e976beba591f40a26d1 | Received Sign: 9601e6c5dc930caee4af5c26a1568e8891779ff01c556dbc7e327b56baa187a4c849aa2185c60266317c8773b95b7d31Błąd weryfikacji sygnatury.
+[2025-07-23 17:59:08] order.php: Skrypt uruchomiony.
+[2025-07-23 17:59:08] order.php: Metoda POST poprawna.
+[2025-07-23 17:59:08] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-07-23 17:59:08] order.php: Sesja juraquest_688106cc462778.02753577 przygotowana.
+[2025-07-23 17:59:08] order.php: Sygnatura dla sesji juraquest_688106cc462778.02753577 wygenerowana.
+[2025-07-23 17:59:08] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688106cc462778.02753577","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688106cc462778.02753577","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"b0a89ca17a500ebbfbb03a5f67050c5eb9caf619f45e185fe75a0eb0f7b515500e631d0469c251154b7325be1e42c4c1"}
+[2025-07-23 17:59:08] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-23 17:59:08] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-23 17:59:08] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-07-23 18:01:44] order.php: Skrypt uruchomiony.
+[2025-07-23 18:01:44] order.php: Metoda POST poprawna.
+[2025-07-23 18:01:44] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-07-23 18:01:44] order.php: Sesja juraquest_68810768d85766.21138945 przygotowana.
+[2025-07-23 18:01:44] order.php: Sygnatura dla sesji juraquest_68810768d85766.21138945 wygenerowana.
+[2025-07-23 18:01:44] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68810768d85766.21138945","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_68810768d85766.21138945","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"a18157ae5479f997e3761d41400d6fee5d37a41b5b3318fd6ad8bbf4086660c2b5d4ec9e1da352ff432fda1aa9a4beba"}
+[2025-07-23 18:01:44] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-07-23 18:01:44] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-07-23 18:01:44] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-07-24 19:21:43] order.php: Skrypt uruchomiony.
+[2025-07-24 19:21:43] order.php: Metoda POST poprawna.
+[2025-07-24 19:21:43] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-07-24 19:21:43] order.php: Sesja juraquest_68826ba71bbc99.43278424 przygotowana.
+[2025-07-24 19:21:43] order.php: Sygnatura dla sesji juraquest_68826ba71bbc99.43278424 wygenerowana.
+[2025-07-24 19:21:43] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_68826ba71bbc99.43278424","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"448f33f568e4e1fbb02dfbb0bd628ea45ada1a669d35d0dc52fe5a8d64ec1fce6397e8275814585daf981a5a6b65fbb3"}
+[2025-07-24 19:21:43] order.php: Inicjuję cURL do: https://secure.przelewy24.pl/api/v1/transaction/register
+[2025-07-24 19:21:43] order.php: cURL wykonany. HTTP Code: 200. cURL Error: . Raw Response: {"data":{"token":"B30F571306-BB68DC-409A65-FA3C2A855E"},"responseCode":0}
+[2025-07-24 19:21:43] order.php: Sukces! Token otrzymany. Przekierowanie na: https://secure.przelewy24.pl/trnRequest/B30F571306-BB68DC-409A65-FA3C2A855E
+Odebrano powiadomienie P24: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","sign":"d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea"}
+p24_notification.php: Sign data for hash: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","crc":"5d0f8ff414160baa"}p24_notification.php: Expected Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea | Received Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aeaBłąd wysyłki e-maila: Invalid address:  (to): 
+Odebrano powiadomienie P24: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","sign":"d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea"}
+p24_notification.php: Sign data for hash: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","crc":"5d0f8ff414160baa"}p24_notification.php: Expected Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea | Received Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aeaBłąd wysyłki e-maila: Invalid address:  (to): 
+Odebrano powiadomienie P24: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","sign":"d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea"}
+p24_notification.php: Sign data for hash: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","crc":"5d0f8ff414160baa"}p24_notification.php: Expected Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea | Received Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aeaBłąd wysyłki e-maila: Invalid address:  (to): 
+Odebrano powiadomienie P24: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","sign":"d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea"}
+p24_notification.php: Sign data for hash: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","crc":"5d0f8ff414160baa"}p24_notification.php: Expected Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea | Received Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aeaBłąd wysyłki e-maila: Invalid address:  (to): 
+Odebrano powiadomienie P24: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","sign":"d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea"}
+p24_notification.php: Sign data for hash: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","crc":"5d0f8ff414160baa"}p24_notification.php: Expected Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea | Received Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aeaBłąd wysyłki e-maila: Invalid address:  (to): 
+Odebrano powiadomienie P24: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","sign":"d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea"}
+p24_notification.php: Sign data for hash: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","crc":"5d0f8ff414160baa"}p24_notification.php: Expected Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea | Received Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aeaBłąd wysyłki e-maila: Invalid address:  (to): 
+Odebrano powiadomienie P24: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","sign":"d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea"}
+p24_notification.php: Sign data for hash: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","crc":"5d0f8ff414160baa"}p24_notification.php: Expected Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea | Received Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aeaBłąd wysyłki e-maila: Invalid address:  (to): 
+Odebrano powiadomienie P24: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","sign":"d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea"}
+p24_notification.php: Sign data for hash: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_68826ba71bbc99.43278424","amount":499,"originAmount":499,"currency":"PLN","orderId":3823120169,"methodId":154,"statement":"p24-D1W-A6H-V9A","crc":"5d0f8ff414160baa"}p24_notification.php: Expected Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aea | Received Sign: d86989878df973ef86ba81221dba8fc48f665dff3caee5f43e9ea17a6362b8e8cf4f4b420fac02342baac177f3ee7aeaBłąd wysyłki e-maila: Invalid address:  (to): 
+[2025-07-26 15:12:31] order.php: Skrypt uruchomiony.
+[2025-07-26 15:12:31] order.php: Metoda POST poprawna.
+[2025-07-26 15:12:31] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-07-26 15:12:31] order.php: Sesja juraquest_6884d43fa24e79.88313426 przygotowana.
+[2025-07-26 15:12:31] order.php: Sygnatura dla sesji juraquest_6884d43fa24e79.88313426 wygenerowana.
+[2025-07-26 15:12:31] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_6884d43fa24e79.88313426","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_6884d43fa24e79.88313426","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"c094437f5164d2ef0bc108d2773c82d327970388e4089177f7491c8af34b8828a3889f8694968194d9ec80c066133edd"}
+[2025-07-26 15:12:31] order.php: Inicjuję cURL do: https://secure.przelewy24.pl/api/v1/transaction/register
+[2025-07-26 15:12:31] order.php: cURL wykonany. HTTP Code: 200. cURL Error: . Raw Response: {"data":{"token":"B44C74F7C1-FCE95E-06EE46-82190FD27D"},"responseCode":0}
+[2025-07-26 15:12:31] order.php: Sukces! Token otrzymany. Przekierowanie na: https://secure.przelewy24.pl/trnRequest/B44C74F7C1-FCE95E-06EE46-82190FD27D
+[2025-07-28 16:33:07] --- SKRYPT verify_code.php URUCHOMIONY (wersja ostateczna) ---
+[2025-07-28 16:33:07] Odebrano kod: ''
+[2025-07-28 17:36:30] order.php: Skrypt uruchomiony.
+[2025-07-28 17:36:30] order.php: Metoda POST poprawna.
+[2025-07-28 17:36:30] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-07-28 17:36:30] order.php: Sesja juraquest_688798fe468fd8.96702006 przygotowana.
+[2025-07-28 17:36:30] order.php: Sygnatura dla sesji juraquest_688798fe468fd8.96702006 wygenerowana.
+[2025-07-28 17:36:30] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688798fe468fd8.96702006","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688798fe468fd8.96702006","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"2b34a706eab626e0a422a5d819e322ec035b9f46818f3bdbdb4c83779f3619173525552ca46fffd9e24a79d500af64ee"}
+[2025-07-28 17:36:30] order.php: Inicjuję cURL do: https://secure.przelewy24.pl/api/v1/transaction/register
+[2025-07-28 17:36:30] order.php: cURL wykonany. HTTP Code: 200. cURL Error: . Raw Response: {"data":{"token":"C1C7B2BA68-E24B19-10D5C9-950DAB9D6C"},"responseCode":0}
+[2025-07-28 17:36:30] order.php: Sukces! Token otrzymany. Przekierowanie na: https://secure.przelewy24.pl/trnRequest/C1C7B2BA68-E24B19-10D5C9-950DAB9D6C
+[2025-08-01 13:17:32] order.php: Skrypt uruchomiony.
+[2025-08-01 13:17:32] order.php: Metoda POST poprawna.
+[2025-08-01 13:17:32] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 13:17:32] order.php: Sesja juraquest_688ca24c21fa47.80582509 przygotowana.
+[2025-08-01 13:17:32] order.php: Sygnatura dla sesji juraquest_688ca24c21fa47.80582509 wygenerowana.
+[2025-08-01 13:17:32] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688ca24c21fa47.80582509","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688ca24c21fa47.80582509","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"30a181bd04f8bf89f9df812ba0fc30c969d0eefc60797113f98fa53e70584e885cbba054e148ca9b380e9d856ec0710e"}
+[2025-08-01 13:17:32] order.php: Inicjuję cURL do: https://secure.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 13:17:32] order.php: cURL wykonany. HTTP Code: 200. cURL Error: . Raw Response: {"data":{"token":"F193651648-4ACC56-10304D-20ED62AF59"},"responseCode":0}
+[2025-08-01 13:17:32] order.php: Sukces! Token otrzymany. Przekierowanie na: https://secure.przelewy24.pl/trnRequest/F193651648-4ACC56-10304D-20ED62AF59
+[2025-08-01 13:24:51] order.php: Skrypt uruchomiony.
+[2025-08-01 13:24:51] order.php: Metoda POST poprawna.
+[2025-08-01 13:24:51] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 13:24:51] order.php: Sesja juraquest_688ca40334c9b6.17430269 przygotowana.
+[2025-08-01 13:24:51] order.php: Sygnatura dla sesji juraquest_688ca40334c9b6.17430269 wygenerowana.
+[2025-08-01 13:24:51] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688ca40334c9b6.17430269","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688ca40334c9b6.17430269","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"ea15e7393bd9a3fce9b7566c5771d20bc2fefa2abdd247c8f1b8fb04e2004e0e947497d8fa259da649d227db859b7cc4"}
+[2025-08-01 13:24:51] order.php: Inicjuję cURL do: https://secure.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 13:24:51] order.php: cURL wykonany. HTTP Code: 200. cURL Error: . Raw Response: {"data":{"token":"EB0312CFC5-8416C5-E560B9-BF06C770D8"},"responseCode":0}
+[2025-08-01 13:24:51] order.php: Sukces! Token otrzymany. Przekierowanie na: https://secure.przelewy24.pl/trnRequest/EB0312CFC5-8416C5-E560B9-BF06C770D8
+[2025-08-01 13:26:30] order.php: Skrypt uruchomiony.
+[2025-08-01 13:26:30] order.php: Metoda POST poprawna.
+[2025-08-01 13:26:30] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 13:26:30] order.php: Sesja juraquest_688ca466b5fbb6.20274020 przygotowana.
+[2025-08-01 13:26:30] order.php: Sygnatura dla sesji juraquest_688ca466b5fbb6.20274020 wygenerowana.
+[2025-08-01 13:26:30] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688ca466b5fbb6.20274020","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688ca466b5fbb6.20274020","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"099e91fbd5e3404cb73bb582d54b7b3c9dc2d3864db384deb3e938dca62ff4769ac691aea0a0d5064c9f11da5f4c21ab"}
+[2025-08-01 13:26:30] order.php: Inicjuję cURL do: https://secure.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 13:26:30] order.php: cURL wykonany. HTTP Code: 200. cURL Error: . Raw Response: {"data":{"token":"F2D8F5B4ED-932CF3-34052D-BFDCDAD26F"},"responseCode":0}
+[2025-08-01 13:26:30] order.php: Sukces! Token otrzymany. Przekierowanie na: https://secure.przelewy24.pl/trnRequest/F2D8F5B4ED-932CF3-34052D-BFDCDAD26F
+[2025-08-01 13:27:37] order.php: Skrypt uruchomiony.
+[2025-08-01 13:27:37] order.php: Metoda POST poprawna.
+[2025-08-01 13:27:37] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 13:27:37] order.php: Sesja juraquest_688ca4a9bfbb52.47079235 przygotowana.
+[2025-08-01 13:27:37] order.php: Sygnatura dla sesji juraquest_688ca4a9bfbb52.47079235 wygenerowana.
+[2025-08-01 13:27:37] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688ca4a9bfbb52.47079235","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688ca4a9bfbb52.47079235","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"f3509a61862bb5d19026725aad81a8c309fd186fa40b9d85ca02c4e4bd4923abec19b91a593d450cae448ead9d4394cd"}
+[2025-08-01 13:27:37] order.php: Inicjuję cURL do: https://secure.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 13:27:37] order.php: cURL wykonany. HTTP Code: 200. cURL Error: . Raw Response: {"data":{"token":"DBAD0C4083-B999C0-28F791-852E531097"},"responseCode":0}
+[2025-08-01 13:27:37] order.php: Sukces! Token otrzymany. Przekierowanie na: https://secure.przelewy24.pl/trnRequest/DBAD0C4083-B999C0-28F791-852E531097
+[2025-08-01 13:33:13] order.php: Skrypt uruchomiony.
+[2025-08-01 13:33:13] order.php: Metoda POST poprawna.
+[2025-08-01 13:33:13] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 13:33:13] order.php: Sesja juraquest_688ca5f9175e81.34838648 przygotowana.
+[2025-08-01 13:33:13] order.php: Sygnatura dla sesji juraquest_688ca5f9175e81.34838648 wygenerowana.
+[2025-08-01 13:33:13] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688ca5f9175e81.34838648","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688ca5f9175e81.34838648","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"e1a19f8bf70cf0605454f0dbd87a68a126b340a3824b45a1698467f93d28ecbe794edd9cbefc2b8eb1b5e28b758d5c63"}
+[2025-08-01 13:33:13] order.php: Inicjuję cURL do: https://secure.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 13:33:13] order.php: cURL wykonany. HTTP Code: 200. cURL Error: . Raw Response: {"data":{"token":"AE3B61FE1D-9BD94E-8002AC-680A06F156"},"responseCode":0}
+[2025-08-01 13:33:13] order.php: Sukces! Token otrzymany. Przekierowanie na: https://secure.przelewy24.pl/trnRequest/AE3B61FE1D-9BD94E-8002AC-680A06F156
+[2025-08-01 13:34:40] order.php: Skrypt uruchomiony.
+[2025-08-01 13:34:40] order.php: Metoda POST poprawna.
+[2025-08-01 13:34:40] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 13:34:40] order.php: Sesja juraquest_688ca65023fa46.85134605 przygotowana.
+[2025-08-01 13:34:40] order.php: Sygnatura dla sesji juraquest_688ca65023fa46.85134605 wygenerowana.
+[2025-08-01 13:34:40] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688ca65023fa46.85134605","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688ca65023fa46.85134605","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"c781bf76c0eae3c5634f7dc947e993a774dec679e5d0ef9155eb3ae8ecd5406e62f8ae478d1862f910a2e8ba2e681e91"}
+[2025-08-01 13:34:40] order.php: Inicjuję cURL do: https://secure.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 13:34:40] order.php: cURL wykonany. HTTP Code: 200. cURL Error: . Raw Response: {"data":{"token":"E6BF837431-097437-7B9417-9414B6B48E"},"responseCode":0}
+[2025-08-01 13:34:40] order.php: Sukces! Token otrzymany. Przekierowanie na: https://secure.przelewy24.pl/trnRequest/E6BF837431-097437-7B9417-9414B6B48E
+[2025-08-01 13:39:35] order.php: Skrypt uruchomiony.
+[2025-08-01 13:39:35] order.php: Metoda POST poprawna.
+[2025-08-01 13:39:35] order.php: E-mail poprawny: mateuszminge@GMAIL.COM
+[2025-08-01 13:39:35] order.php: Sesja juraquest_688ca7778ead01.49687792 przygotowana.
+[2025-08-01 13:39:35] order.php: Sygnatura dla sesji juraquest_688ca7778ead01.49687792 wygenerowana.
+[2025-08-01 13:39:35] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688ca7778ead01.49687792","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@GMAIL.COM","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688ca7778ead01.49687792","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"c8fc9d500602fe673eb217470c785b1a1116a81f6f1f3bd5b59ff3fd78b48e8e3245418be23ef1ce9628ad68928a5725"}
+[2025-08-01 13:39:35] order.php: Inicjuję cURL do: https://secure.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 13:39:35] order.php: cURL wykonany. HTTP Code: 200. cURL Error: . Raw Response: {"data":{"token":"D4CF5E2663-7BEF80-24E711-12F6D0C2A2"},"responseCode":0}
+[2025-08-01 13:39:35] order.php: Sukces! Token otrzymany. Przekierowanie na: https://secure.przelewy24.pl/trnRequest/D4CF5E2663-7BEF80-24E711-12F6D0C2A2
+[2025-08-01 13:46:11] order.php: Skrypt uruchomiony.
+[2025-08-01 13:46:11] order.php: Metoda POST poprawna.
+[2025-08-01 13:46:11] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 13:46:11] order.php: Sesja juraquest_688ca903da0e25.26251393 przygotowana.
+[2025-08-01 13:46:11] order.php: Sygnatura dla sesji juraquest_688ca903da0e25.26251393 wygenerowana.
+[2025-08-01 13:46:11] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688ca903da0e25.26251393","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688ca903da0e25.26251393","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"0819092c7e14525377f4a07a096b6cd3ea5b88cece4607a364a26d40f427d53ca08132cc90340c8871ba430073ed93a5"}
+[2025-08-01 13:46:11] order.php: Inicjuję cURL do: https://secure.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 13:46:12] order.php: cURL wykonany. HTTP Code: 200. cURL Error: . Raw Response: {"data":{"token":"A0F83B0BA5-1591C7-45C8F3-C3E53EF775"},"responseCode":0}
+[2025-08-01 13:46:12] order.php: Sukces! Token otrzymany. Przekierowanie na: https://secure.przelewy24.pl/trnRequest/A0F83B0BA5-1591C7-45C8F3-C3E53EF775
+[2025-08-01 13:52:53] order.php: Skrypt uruchomiony.
+[2025-08-01 13:52:53] order.php: Metoda POST poprawna.
+[2025-08-01 13:52:53] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 13:52:53] order.php: Sesja juraquest_688caa9582eef2.77136200 przygotowana.
+[2025-08-01 13:52:53] order.php: Sygnatura dla sesji juraquest_688caa9582eef2.77136200 wygenerowana.
+[2025-08-01 13:52:53] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688caa9582eef2.77136200","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688caa9582eef2.77136200","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"a86614d4a81a9747591f0cd84d67dc315353a1fa93a9dc855c3d5da309555fc9abd5aa9e43fd9ced5127497d1c1c4cdb"}
+[2025-08-01 13:52:53] order.php: Inicjuję cURL do: https://secure.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 13:52:53] order.php: cURL wykonany. HTTP Code: 200. cURL Error: . Raw Response: {"data":{"token":"F462111715-4A6693-FB078E-981B49AD42"},"responseCode":0}
+[2025-08-01 13:52:53] order.php: Sukces! Token otrzymany. Przekierowanie na: https://secure.przelewy24.pl/trnRequest/F462111715-4A6693-FB078E-981B49AD42
+[2025-08-01 13:54:43] --- SKRYPT verify_code.php URUCHOMIONY (wersja ostateczna) ---
+[2025-08-01 13:54:43] Odebrano kod: ''
+[2025-08-01 13:54:43] --- SKRYPT verify_code.php URUCHOMIONY (wersja ostateczna) ---
+[2025-08-01 13:54:43] Odebrano kod: ''
+[2025-08-01 14:34:45] --- SKRYPT get_leaderboard.php URUCHOMIONY ---
+[2025-08-01 14:35:15] --- SKRYPT get_leaderboard.php URUCHOMIONY ---
+[2025-08-01 14:35:37] --- SKRYPT get_leaderboard.php URUCHOMIONY ---
+[2025-08-01 14:35:55] --- SKRYPT get_leaderboard.php URUCHOMIONY ---
+[2025-08-01 14:36:19] --- SKRYPT get_leaderboard.php URUCHOMIONY ---
+[2025-08-01 14:36:19] --- Koniec skryptu ---
+[2025-08-01 14:36:32] --- SKRYPT get_leaderboard.php URUCHOMIONY ---
+[2025-08-01 14:38:19] --- SKRYPT get_leaderboard.php URUCHOMIONY ---
+[2025-08-01 14:44:15] --- SKRYPT get_leaderboard.php URUCHOMIONY ---
+[2025-08-01 14:44:15] Pomyślnie połączono z bazą danych.
+[2025-08-01 14:44:15] --- Koniec skryptu ---
+[2025-08-01 14:45:49] --- SKRYPT get_leaderboard.php URUCHOMIONY ---
+[2025-08-01 14:45:49] Pomyślnie połączono z bazą danych.
+[2025-08-01 14:45:49] --- Koniec skryptu ---
+[2025-08-01 14:51:33] --- SKRYPT get_leaderboard.php URUCHOMIONY ---
+[2025-08-01 14:51:33] Pomyślnie połączono z bazą danych.
+[2025-08-01 14:51:33] --- Koniec skryptu ---
+[2025-08-01 15:35:36] order.php: Skrypt uruchomiony.
+[2025-08-01 15:35:36] order.php: Metoda POST poprawna.
+[2025-08-01 15:35:36] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 15:35:36] order.php: Sesja juraquest_688cc2a88b43d5.14432247 przygotowana.
+[2025-08-01 15:35:36] order.php: Sygnatura dla sesji juraquest_688cc2a88b43d5.14432247 wygenerowana.
+[2025-08-01 15:35:36] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688cc2a88b43d5.14432247","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688cc2a88b43d5.14432247","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"91867e33b1ff9f6ede15875086e12e884b7281853732c4b8422e77a7b7c05e9693312ff5295784957870493e1365bb01"}
+[2025-08-01 15:35:36] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 15:35:36] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:35:36] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:35:43] order.php: Skrypt uruchomiony.
+[2025-08-01 15:35:43] order.php: Metoda POST poprawna.
+[2025-08-01 15:35:43] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 15:35:43] order.php: Sesja juraquest_688cc2afba9136.77939844 przygotowana.
+[2025-08-01 15:35:43] order.php: Sygnatura dla sesji juraquest_688cc2afba9136.77939844 wygenerowana.
+[2025-08-01 15:35:43] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688cc2afba9136.77939844","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688cc2afba9136.77939844","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"05a4bbec438a8cc2c60f96738dfb60878e562090bd744e20c3dc7c123aa193501e0599b53df1b7f4da3dff886551ac57"}
+[2025-08-01 15:35:43] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 15:35:43] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:35:43] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:41:08] order.php: Skrypt uruchomiony.
+[2025-08-01 15:41:08] order.php: Metoda POST poprawna.
+[2025-08-01 15:41:08] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 15:41:08] order.php: Sesja juraquest_688cc3f4d12539.82203110 przygotowana.
+[2025-08-01 15:41:08] order.php: Sygnatura dla sesji juraquest_688cc3f4d12539.82203110 wygenerowana.
+[2025-08-01 15:41:08] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688cc3f4d12539.82203110","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688cc3f4d12539.82203110","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"6d5699490f8ec46e914b6a89f125e72d4aa5a6fdfd04c8a9244c4a1b2e345cb6f4790834f340aad0d9972a8fbb017ad3"}
+[2025-08-01 15:41:08] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 15:41:08] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:41:08] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:41:12] order.php: Skrypt uruchomiony.
+[2025-08-01 15:41:12] order.php: Metoda POST poprawna.
+[2025-08-01 15:41:12] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 15:41:12] order.php: Sesja juraquest_688cc3f8f00669.50725940 przygotowana.
+[2025-08-01 15:41:12] order.php: Sygnatura dla sesji juraquest_688cc3f8f00669.50725940 wygenerowana.
+[2025-08-01 15:41:12] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688cc3f8f00669.50725940","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688cc3f8f00669.50725940","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"e24551b7648df77317074ef3f99e8e8c5908b06e6c529827c9758b7540285ba4033fd4cfb10741c4b77f739840618bf4"}
+[2025-08-01 15:41:12] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 15:41:13] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:41:13] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:44:17] order.php: Skrypt uruchomiony.
+[2025-08-01 15:44:17] order.php: Metoda POST poprawna.
+[2025-08-01 15:44:17] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 15:44:17] order.php: Sesja juraquest_688cc4b15ae408.80147929 przygotowana.
+[2025-08-01 15:44:17] order.php: Sygnatura dla sesji juraquest_688cc4b15ae408.80147929 wygenerowana.
+[2025-08-01 15:44:17] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688cc4b15ae408.80147929","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688cc4b15ae408.80147929","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"e7163885927647fd20d80b21cde5f0449bb8774142288c9c83319173d96a1d05165f36b8bf0a0f158f2097256dd0f032"}
+[2025-08-01 15:44:17] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 15:44:17] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:44:17] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:44:33] order.php: Skrypt uruchomiony.
+[2025-08-01 15:44:33] order.php: Metoda POST poprawna.
+[2025-08-01 15:44:33] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 15:44:33] order.php: Sesja juraquest_688cc4c1cc7111.31478292 przygotowana.
+[2025-08-01 15:44:33] order.php: Sygnatura dla sesji juraquest_688cc4c1cc7111.31478292 wygenerowana.
+[2025-08-01 15:44:33] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688cc4c1cc7111.31478292","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688cc4c1cc7111.31478292","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"b5304b02eb1ce9be03a9e4ad970b2942ef1c34e3bfb180cfd45101da3505c6e874c3bfa77a42c7d6bd06a4b52d6281a4"}
+[2025-08-01 15:44:33] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 15:44:33] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:44:33] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:44:45] order.php: Skrypt uruchomiony.
+[2025-08-01 15:44:45] order.php: Metoda POST poprawna.
+[2025-08-01 15:44:45] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 15:44:45] order.php: Sesja juraquest_688cc4cdd78369.62498450 przygotowana.
+[2025-08-01 15:44:45] order.php: Sygnatura dla sesji juraquest_688cc4cdd78369.62498450 wygenerowana.
+[2025-08-01 15:44:45] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688cc4cdd78369.62498450","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688cc4cdd78369.62498450","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"d5c00c1b1a7b7483d0e416d673b0f98d6943d43fb4ec6852e3bae372e5be9e65797ade02c8d1c07b0b18c88e366781b7"}
+[2025-08-01 15:44:45] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 15:44:45] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:44:45] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:50:39] order.php: Skrypt uruchomiony.
+[2025-08-01 15:50:39] order.php: Metoda POST poprawna.
+[2025-08-01 15:50:39] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 15:50:39] order.php: Sesja juraquest_688cc62fa09241.94134369 przygotowana.
+[2025-08-01 15:50:39] order.php: Sygnatura dla sesji juraquest_688cc62fa09241.94134369 wygenerowana.
+[2025-08-01 15:50:39] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688cc62fa09241.94134369","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688cc62fa09241.94134369","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"4450f0c4f77278827315b1dc6c240b897edea635b612c1dd53c62be48522d7803bf8ab30478c39b25f83a8bc4e3cc884"}
+[2025-08-01 15:50:39] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 15:50:39] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:50:39] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:53:13] order.php: Skrypt uruchomiony.
+[2025-08-01 15:53:13] order.php: Metoda POST poprawna.
+[2025-08-01 15:53:13] order.php: E-mail poprawny: knalshsfah@da.pl
+[2025-08-01 15:53:13] order.php: Sesja juraquest_688cc6c9bee347.16500667 przygotowana.
+[2025-08-01 15:53:13] order.php: Sygnatura dla sesji juraquest_688cc6c9bee347.16500667 wygenerowana.
+[2025-08-01 15:53:13] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688cc6c9bee347.16500667","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"knalshsfah@da.pl","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688cc6c9bee347.16500667","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"c7797dcc41bed70562eb0a47634aa7850e6ea97ede8763fb1b3d081a4e41d27be291cb61ae31ab7a6e2b3210cf23fe97"}
+[2025-08-01 15:53:13] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 15:53:13] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 15:53:13] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 16:01:07] order.php: Skrypt uruchomiony.
+[2025-08-01 16:01:07] order.php: Metoda POST poprawna.
+[2025-08-01 16:01:07] order.php: E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 16:01:07] order.php: Sesja juraquest_688cc8a3684512.78774540 przygotowana.
+[2025-08-01 16:01:07] order.php: Sygnatura dla sesji juraquest_688cc8a3684512.78774540 wygenerowana.
+[2025-08-01 16:01:07] order.php: Dane do wysłania: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688cc8a3684512.78774540","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688cc8a3684512.78774540","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"8b84eb5fd76e83f70f37f527b6b016c304bb6839c7dcf1b77ccdd1912b094dee015e6ded37b935ebb8678aad87614692"}
+[2025-08-01 16:01:07] order.php: Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 16:01:07] order.php: cURL wykonany. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 16:01:07] order.php: BŁĄD REJESTRACJI TRANSAKCJI. HTTP Code: 401 | cURL Error:  | Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 16:04:08] [order.php] Skrypt uruchomiony.
+[2025-08-01 16:04:08] [order.php] Plik config.php załadowany.
+[2025-08-01 16:04:08] [order.php] Metoda POST poprawna.
+[2025-08-01 16:04:08] [order.php] E-mail poprawny: mateuszminge@gmail.com
+[2025-08-01 16:04:08] [order.php] Sesja juraquest_688cc958709716.99404773 przygotowana.
+[2025-08-01 16:04:08] [order.php] Sygnatura dla sesji juraquest_688cc958709716.99404773 wygenerowana.
+[2025-08-01 16:04:08] [order.php] Dane do wysłania do P24: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688cc958709716.99404773","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"mateuszminge@gmail.com","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688cc958709716.99404773","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"c5fa92c398f6a1c6e7459f07c9329ae38287709af623e1c5fb3227c9ccff99ca396bd1593afb040df306e333e6d3b081"}
+[2025-08-01 16:04:08] [order.php] Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 16:04:08] [order.php] Odpowiedź z P24. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 16:04:08] [order.php] BŁĄD REJESTRACJI TRANSAKCJI.
+[2025-08-01 16:10:52] [order.php] Skrypt uruchomiony.
+[2025-08-01 16:10:52] [order.php] Plik config.php załadowany.
+[2025-08-01 16:10:52] [order.php] Metoda POST poprawna.
+[2025-08-01 16:10:52] [order.php] E-mail poprawny: makfha@fajoi.pl
+[2025-08-01 16:10:52] [order.php] Sesja juraquest_688ccaec2ab4d3.68145449 przygotowana.
+[2025-08-01 16:10:52] [order.php] Sygnatura dla sesji juraquest_688ccaec2ab4d3.68145449 wygenerowana.
+[2025-08-01 16:10:52] [order.php] Dane do wysłania do P24: {"merchantId":352184,"posId":352184,"sessionId":"juraquest_688ccaec2ab4d3.68145449","amount":499,"currency":"PLN","description":"Zam\u00f3wienie gry: warszycki-skarb","email":"makfha@fajoi.pl","country":"PL","language":"pl","urlReturn":"https:\/\/juraquest.pl\/dziekujemy.html?session=juraquest_688ccaec2ab4d3.68145449","urlStatus":"https:\/\/juraquest.pl\/api\/p24_notification.php","sign":"802319c08c44e46f56a0d9f1485f7340353d16f9c67b365e5cd93fe54a52462a2b32d9691f3566bbd53b680861aafbf5"}
+[2025-08-01 16:10:52] [order.php] Inicjuję cURL do: https://sandbox.przelewy24.pl/api/v1/transaction/register
+[2025-08-01 16:10:52] [order.php] Odpowiedź z P24. HTTP Code: 401. cURL Error: . Raw Response: {"error":"Incorrect authentication","code":401}
+[2025-08-01 16:10:52] [order.php] BŁĄD REJESTRACJI TRANSAKCJI.

@@ -1,0 +1,6 @@
+[2025-07-12 08:50:32] --- NEW REQUEST ---
+[2025-07-12 08:50:32] URI: /verify_code.php
+[2025-07-12 08:50:32] METHOD: POST
+[2025-07-12 08:50:32] FROM: ::1
+[2025-07-12 08:50:32] BODY: {"code":"1"}
+[2025-07-12 08:50:32] Action: Matched /verify_code.php. Forwarding to backend/verify_code.php
